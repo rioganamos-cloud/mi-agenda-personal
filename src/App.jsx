@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 
 const SUPABASE_URL = "https://grtmfhlcsfmvzmtrxugg.supabase.co";
-const SUPABASE_ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdydG1maGxjc2ZtdnptdHJ4dWdnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI5MjA2MzgsImV4cCI6MjA1ODQ5NjYzOH0.YJpGdQjEi0B-TrMCbQbgVoMpbKSR5MMXyH1XsUanp4o";
+const SUPABASE_ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdydG1maGxjc2ZtdnptdHJ4dWdnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ0NTg2MzgsImV4cCI6MjA5MDAzNDYzOH0.BInOLC0LRPGNRF4QqrExDwRbbJQZOHNtg3pFnq-hXdU";
 
 async function sbFetch(path, opts = {}) {
   const session = JSON.parse(localStorage.getItem("sb_session") || "null");
